@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+main{
+    width: min-content;
+    min-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1vw 2vw 1vw 2vw;
+    background-color: #68b3ec;
+    
+}
+nav{
+    background: #0082e6;
+    height: 5vw;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 3vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 4.5vw;
+    padding: 0 3vw;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 1vw;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 4.5vw;
+    margin: 0 1vw;
+}
+nav ul li a{
+    color: white;
+    font-size: 2vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+}
+form input{
+    padding: .5%;
+    margin: .4%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;   
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.dropbtn{
+    background: #1b9bff;
+    color: white;
+    font-size: 2vw;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    display: none;
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: #68b3ec;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 10vw;
+}
+.dropdown-content a{
+    color: white;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media (max-width: 1000px) {
+    main{
+        min-width: 80%;
+    }
+    nav{
+        height: min-content;
+    }
+    .dropdown{
+        display: block;
+        float: right;
+        line-height: 4.5vw;
+        margin: 0 1vw;
+    }
+    nav ul{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+ 
+}
+@media print{
+    header{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    main{
+        background: none;
+    }
+    a{
+        display: none;
+    }
+}
+footer{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%; 
+    text-align: center;
+}
+h1{
+    padding: .5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
+}   
+h2{
+    padding: .5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+}
+p{
+    padding: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+}
+.img{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: min-content;
+}
+table, th, td{
+    width: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    border: 0.1vw solid;
+    border-collapse: collapse;
+    padding: .5vw;
+    text-align: center;
+}
+ul, li{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5vw;
+}

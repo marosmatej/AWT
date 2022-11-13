@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8">
+    <title>Domov</title>
+    <link rel="stylesheet" href="screenStyle.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <label class="logo">AutoBlog</label>
+        <div class="dropdown">
+          <button class="dropbtn">MENU</button>
+          <div class="dropdown-content">
+          <a href="index.html">Domov</a>
+          <a href="article1.html">Článok 1</a>
+          <a href="article2.html">Článok 2</a>
+          <a href="article3.html">Článok 3</a>
+          </div>
+        </div>
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="article1.html">Článok 1</a></li>
+          <li><a href="article2.html">Článok 2</a></li>
+          <li><a href="article3.html">Článok 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+      <main>
+        <h1>Sme blog zo sveta motorizmu</h1>
+        <p>
+        Hľadali ste už niekedy odpovede na vaše otázky ohľadom aút? Mate túžbu sa podeliť o vaše zážitky a skúsenosti? .....
+        </p>
+        <h2>Trendy:</h2>
+        <ul>
+            <li><a href="article1.html">Najlepšie predávané autá v roku 2021</a></li>
+            <li><a href="article2.html">Article 2</a></li>
+            <li><a href="article3.html">Article 3</a></li>
+        </ul>
+
+        <h2>Kto sme?</h2>
+
+        <p>Sme tím s veľkým záujmom do áut, ktorý chceme posúvať ďalej...
+            <br>Kontakt: <a href="mailto:dotazy@c4u.sk">dotazy@c4u.sk</a>
+        </p>
+      <article id="opinions">
+        <h2>Názory ostatných</h2>
+        <div id="opinionsContainer"></div>
+      </article>
+
+
+       <article>
+
+        <h2>Váš názor</h2>
+
+        <form id="openForm">
+          <div>
+            <label for="name">Meno</label>
+            <input type="text" id="name" placeholder="Zadaj meno" required />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Zadaj email" required />
+          </div>
+          <div>
+            <label for="comment">Váš názor</label>
+            <br>
+            <textarea name="n_comment" id="comment" cols="70" rows="5" placeholder="Miesto pre tvoj názor" required></textarea>
+            <br>
+          </div>
+          <div>
+            <label>Si autičkár?</label>
+            <input type="radio" name="carLover" id="carLover" />Áno
+            <input type="radio" name="carLover" id="carLover" />Nie
+          </div>
+          <button type="submit">Odoslať</button>
+        </form>
+       </article>
+        
+    </main>
+    <footer>
+        <svg height="130" width="200">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+            <text fill="#000000" font-size="45" font-family="Verdana" x="50" y="86">C4U</text>
+          </svg>
+    </footer>
+
+    <script id="mTmplOneOpinion" type="text/template">
+      <section>
+          <h3>{{name}} <i>{{createdDate}}</i></h3>
+          <p>{{comment}}</p>
+          <p>Autičkár</p><p>{{carLover}}</p>
+      </section>
+    </script>
+
+    <script type="module" src="js/main.js"></script>
+
+  </body>
+</html>
+
