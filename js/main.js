@@ -1,4 +1,4 @@
-import OpinionsHandler from "./opinionsHandler.js";
+import OpinionsHandlerMustache from "./opinionsHandlerMustache.js";
 
-window.opnsHndlr = new OpinionsHandler("openForm","opinionsContainer");
+window.opnsHndlr = new OpinionsHandlerMustache("openForm","opinionsContainer","mTmplOneOpinion");
 window.opnsHndlr.init();
