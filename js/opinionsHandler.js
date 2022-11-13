@@ -41,6 +41,8 @@ export default class OpinionsHandler
 
       this.opinions.push(newOpinion);
 
+      console.log(this.opinions);
+
       localStorage.myTreesComments = JSON.stringify(opinions);
 
 
